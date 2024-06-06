@@ -59,11 +59,16 @@ console.log(box7);
 // Expected output:
 // 'John Doe'
 const person8 = { firstName: 'John', lastName: 'Doe', age: 25 };
+const fullName = person8.firstName + ' '+ person8.lastName;
+console.log(fullName);
 
 // Q9: Increment the value of the 'quantity' property in the 'cart' object by 1.
 // Expected output:
 // { item: 'Book', quantity: 3, total: 45 }
 const cart9 = { item: 'Book', quantity: 2, total: 30 };
+cart9.quantity = 3
+cart9.total = 45
+console.log(cart9)
 
 // Q10: Check if the 'price' property in the 'product' object is less than 100.
 // Expected output:
