@@ -74,3 +74,9 @@ console.log(cart9)
 // Expected output:
 // false
 const product10 = { name: 'Phone', price: 150 };
+if(product10.price < 100){
+  console.log('true');
+}
+else{
+  console.log('false');
+}
