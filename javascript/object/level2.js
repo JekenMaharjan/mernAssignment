@@ -54,7 +54,7 @@ console.log(copyStudent);
 // true
 const user6 = { name: 'John', age: 30, address: '123 Main St' };
 
-const checkString = typeof user6.address === 'string';
+const checkString = typeof(user6.address) === 'string';
 console.log(checkString);
 
 
