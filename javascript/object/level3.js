@@ -98,14 +98,58 @@ highScore();
 // Expected output for employees7: 55000
 const employees7 = { emp1: { name: 'John', salary: 60000 }, emp2: { name: 'Alice', salary: 50000 }, emp3: { name: 'Bob', salary: 55000 } };
 
+const a = employees7.emp1.salary
+const b = employees7.emp2.salary
+const c = employees7.emp3.salary
+
+const employEE = {a, b, c}
+console.log(employEE);
+
+const emp = Object.values(employEE);
+
+function avgSalary(){
+  let sum=0;
+  for(i=0;i<emp.length;i++){
+    sum = sum + emp[i];
+  }
+  return (sum/(emp.length));
+}
+
+avgSalary();
+
+
 // Q8: Create a function that takes the 'data' object and returns an array of values sorted in ascending order.
 // Expected output for data8: [25, 'John', 'New York']
 const data8 = { name: 'John', age: 25, city: 'New York' };
+
+function ascend(){
+    Object.values(data8).sort();
+}
+ascend();
+
 
 // Q9: Create a function that takes the 'order' object and calculates the total cost based on quantity and price.
 // Expected output for order9: 150
 const order9 = { item: 'Laptop', quantity: 2, price: 75 };
 
+function totalCost(){
+  const cost = order9.quantity * order9.price;
+  return cost;
+}
+totalCost();
+
+
 // Q10: Create a function that takes the 'expenses' object and returns the total amount spent.
 // Expected output for expenses10: 500
 const expenses10 = { rent: 200, groceries: 150, utilities: 100, entertainment: 50 };
+
+function totalAmountSpent(){
+  const total = Object.values(expenses10);
+  let sum = 0;
+  for(i=0;i<total.length;i++){
+    sum=sum+total[i];
+  }
+  return sum;
+}
+totalAmountSpent();
+
