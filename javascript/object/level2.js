@@ -43,7 +43,7 @@ console.log(checkAllProperties)
 // { name: 'Alice', age: 20, grade: 'A' }
 const student5 = { name: 'Alice', age: 20, grade: 'A' };
 
-const copyStudent = student5
+const copyStudent = {...student5};
 console.log(student5);
 copyStudent.name = 'Hari';
 console.log(copyStudent);
@@ -82,7 +82,7 @@ console.log(allArr);
 const book9 = { title: 'JavaScript Basics', author: 'John Smith', year: 2020 };
 
 const prop = Object.values(book9);
-typeof prop === 'null';
+prop.includes(null);
 
 
 // Q10: Reverse the 'fullName' property value in the 'person' object.
